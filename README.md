@@ -5,6 +5,7 @@ I denne opgave skal du opsætte en moderne React‑applikation med Vite og imple
 ---
 
 ## 1. Projektopsætning
+
 - Opret et nyt projekt med **Vite** og **React**
 - Installer **Zod**
 - Opret en komponent `RegistrationForm.jsx` hvor al formular‑ og valideringslogik ligger
@@ -12,6 +13,7 @@ I denne opgave skal du opsætte en moderne React‑applikation med Vite og imple
 ---
 
 ## 2. Formularfelter
+
 Din formular skal som minimum indeholde følgende felter:
 
 - Fornavn (tekst)
@@ -29,21 +31,25 @@ Du må gerne tilføje flere felter.
 ## 3. Valideringskrav (Zod)
 
 ### Password‑krav
+
 Password skal:
-- være mindst 8 tegn  
-- indeholde mindst ét stort bogstav  
-- indeholde mindst ét lille bogstav  
-- indeholde mindst ét tal  
-- indeholde mindst ét specialtegn (!@#$%^&*)
+
+- være mindst 8 tegn
+- indeholde mindst ét stort bogstav
+- indeholde mindst ét lille bogstav
+- indeholde mindst ét tal
+- indeholde mindst ét specialtegn (!@#$%^&\*)
 
 `Gentag password` skal matche det første password.
 
 ---
 
 ### Alderskrav
+
 Brugeren skal være **mindst 18 år**.
 
 Du skal:
+
 - Validere datoen med Zod
 - Udregne alder ud fra fødselsdatoen
 - Returnere en fejl, hvis brugeren er under 18
@@ -51,17 +57,20 @@ Du skal:
 ---
 
 ### Email
+
 - Skal være en gyldig emailadresse (`z.string().email()`)
 
 ---
 
 ### Telefonnummer
+
 - Feltet er valgfrit
 - Hvis det er udfyldt, skal det matche et dansk nummerformat (8 cifre)
 
 ---
 
 ### Andre krav (vælg mindst 2)
+
 Vælg mindst to af følgende ekstra valideringer:
 
 - Brugernavn: kun bogstaver, tal og underscore
@@ -74,6 +83,7 @@ Vælg mindst to af følgende ekstra valideringer:
 ---
 
 ## 4. Fejlhåndtering i UI
+
 - Fejlbeskeder skal vises under hvert felt
 - Fejl skal opdateres live, når brugeren skriver
 - Når formularen er gyldig, skal du vise en “Tak for din registrering”-besked med de indtastede data (undtagen password)
@@ -81,6 +91,7 @@ Vælg mindst to af følgende ekstra valideringer:
 ---
 
 ## 5. Bonus (frivilligt)
+
 Hvis du vil udfordre dig selv, kan du tilføje:
 
 - Debounce på validering
