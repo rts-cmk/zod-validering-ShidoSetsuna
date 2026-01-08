@@ -1,8 +1,12 @@
-import { useState } from "react";
+import FormRegistration from "./components/form_registration/form_registration";
 import "./App.css";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <FormRegistration />
+    </>
+  );
 }
 
 export default App;
